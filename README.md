@@ -54,15 +54,3 @@ python -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
 67 项离线测试在测试目录中模拟网络请求。Windows / Python 3.14 已完成这些测试，并完成真实搜索和下载验证。Python 最低版本由代码使用的 `hashlib.file_digest` 和 [Pillow 13](https://pypi.org/project/pillow/13.0.0/)共同决定。
-
-## GitHub 发布
-
-把解压后 `pexels-image-search/` 文件夹内的文件上传到仓库根目录，包括名称以点开头的文件；也可以把 ZIP 作为 Release 附件发布。请保留 README、SKILL、LICENSE、源码和测试。
-
-[.gitignore](.gitignore) 会保留 `.env.example`，并忽略私有配置、依赖、缓存和默认输出目录中的文件。其他位置的私人文件需要自行排除。已经被 Git 跟踪的文件不会自动变成忽略项，参见 [GitHub 说明](https://docs.github.com/en/get-started/git-basics/ignoring-files)。反馈问题时，请仅提供操作系统、Python 版本、命令参数和去除敏感信息后的错误内容。
-
-## 来源与许可
-
-本项目从 [hugohe3/ppt-master](https://github.com/hugohe3/ppt-master) v6.7.0 中拆出搜图功能，并作了精简和修复。代码按 [MIT License](LICENSE) 分发，保留 Hugo He 的版权声明。
-
-MIT 许可证只适用于代码，照片须遵守 [Pexels 许可](https://www.pexels.com/license/)。展示 API 返回的图片时，请保留作者和 Pexels 链接，具体要求见 [官方 API 规范](https://www.pexels.com/api/documentation/)。
