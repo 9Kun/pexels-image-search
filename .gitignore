@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+*.env
+.envrc
+
+# Local dependencies and Python caches
+_vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated searches, downloads, diagnostics and archives
+outputs/
+downloads/
+search-*/
+.pexels-download.lock
+.pexels-stage-*/
+*.part
+*.log
+*.zip
+
+# Local editor / operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

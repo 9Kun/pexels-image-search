@@ -1,0 +1,7 @@
+interface:
+  display_name: "Pexels 高清找图"
+  short_description: "使用 Pexels Key 搜索高清照片、预览候选并下载原图，记录作者与来源"
+  default_prompt: "使用 $pexels-image-search 从 Pexels 找适合本次配图的高清照片，先展示候选预览，保留作者和来源链接。"
+
+policy:
+  allow_implicit_invocation: true
